@@ -55,28 +55,28 @@ void OnInit(void)
    SetIndexStyle(2,DRAW_HISTOGRAM,STYLE_DOT);
    SetIndexBuffer(2,ExtSpanA_Buffer);
    SetIndexDrawBegin(2,InpKijun+ExtBegin-1);
-   SetIndexShift(2,InpKijun);
+   SetIndexShift(2,InpKijun-1);
    SetIndexLabel(2,NULL);
    SetIndexStyle(5,DRAW_LINE,STYLE_DOT);
    SetIndexBuffer(5,ExtSpanA2_Buffer);
    SetIndexDrawBegin(5,InpKijun+ExtBegin-1);
-   SetIndexShift(5,InpKijun);
+   SetIndexShift(5,InpKijun-1);
    SetIndexLabel(5,"Senkou Span A");
 //---
    SetIndexStyle(3,DRAW_HISTOGRAM,STYLE_DOT);
    SetIndexBuffer(3,ExtSpanB_Buffer);
    SetIndexDrawBegin(3,InpKijun+InpSenkou-1);
-   SetIndexShift(3,InpKijun);
+   SetIndexShift(3,InpKijun-1);
    SetIndexLabel(3,NULL);
    SetIndexStyle(6,DRAW_LINE,STYLE_DOT);
    SetIndexBuffer(6,ExtSpanB2_Buffer);
    SetIndexDrawBegin(6,InpKijun+InpSenkou-1);
-   SetIndexShift(6,InpKijun);
+   SetIndexShift(6,InpKijun-1);
    SetIndexLabel(6,"Senkou Span B");
 //---
    SetIndexStyle(4,DRAW_LINE);
    SetIndexBuffer(4,ExtChikouBuffer);
-   SetIndexShift(4,-InpKijun);
+   SetIndexShift(4,-InpKijun+1);
    SetIndexLabel(4,"Chikou Span");
 //--- initialization done
   }
